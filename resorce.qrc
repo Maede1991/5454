@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="images">
+    <file>2396730303.jpg</file>
+    <file>Submit-Button-Transparent-Background.png</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>

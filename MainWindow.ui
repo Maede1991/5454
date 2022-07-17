@@ -1,0 +1,4225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1095</width>
+    <height>866</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonFollowStyle</enum>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnSend">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>740</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/images/Submit-Button-Transparent-Background.png);
+border:2px;
+	background:none;
+}
+QPushButton::hover
+{
+border:-0px;
+}
+QPushButton::pressed
+{
+border:4px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>150</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>868</width>
+      <height>785</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="3">
+      <widget class="QFrame" name="frame_277">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_278">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_96">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_279">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_96">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>CTS</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QFrame" name="frame_274">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_275">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_95">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_276">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_95">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>O2SD</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QFrame" name="frame_247">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_248">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_86">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_249">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_86">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved3</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QFrame" name="frame_223">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_224">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_78">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_225">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_78">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>AC Sw1</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QFrame" name="frame_232">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_233">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_81">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_234">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_81">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>PSV</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QFrame" name="frame_214">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_215">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_75">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_216">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_75">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>AC Sw2</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QFrame" name="frame_229">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_230">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_80">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_231">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_80">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Clutch</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QFrame" name="frame_235">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_236">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_82">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_237">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_82">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Brake Switch Test</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QFrame" name="frame_226">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_227">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_79">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_228">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_79">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>UntiStart</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QFrame" name="frame_244">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_245">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_85">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_246">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_85">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>VehicleSpeed</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QFrame" name="frame_241">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_242">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_84">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_243">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_84">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved2</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QFrame" name="frame_202">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_203">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_71">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_204">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_71">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>TPS</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QFrame" name="frame_205">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_206">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_72">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_207">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_72">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>FuelLevel</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QFrame" name="frame_208">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_209">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_73">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_210">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_73">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved1</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QFrame" name="frame_211">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_212">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_74">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_213">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_74">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>FanSpeed</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QFrame" name="frame_220">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_221">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_77">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_222">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_77">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Voltage Battery</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QFrame" name="frame_217">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_218">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_76">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_219">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_76">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Switch</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QFrame" name="frame_280">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_281">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_97">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_282">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_97">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>O2SU</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QFrame" name="frame_283">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_284">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_98">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_285">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_98">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>MAT</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QFrame" name="frame_268">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_269">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_93">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_270">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_93">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved8</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QFrame" name="frame_238">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_239">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_83">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_240">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_83">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved4</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QFrame" name="frame_271">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_272">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_94">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_273">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_94">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 1px solid yellow ;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Footer1</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="10" column="3">
+      <widget class="QFrame" name="frame_262">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_263">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_91">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_264">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_91">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 1px solid yellow ;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Footer2</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QFrame" name="frame_253">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_254">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_88">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_255">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_88">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved6</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QFrame" name="frame_256">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_257">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_89">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_258">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_89">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved5</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QFrame" name="frame_259">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_260">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_90">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_261">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_90">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved7</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QFrame" name="frame_250">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_251">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_87">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_252">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_87">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QFrame" name="frame_265">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_266">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_92">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_267">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_92">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Reserved9</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QFrame" name="frame_292">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_293">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_101">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_294">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_101">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 1px solid yellow ;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Header1</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QFrame" name="frame_289">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_290">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_100">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_291">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_100">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>MAP</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QFrame" name="frame_286">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_287">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_99">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_288">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_99">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 3px solid wHITE;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>RPM</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QFrame" name="frame_295">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>89</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(221, 221, 221);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QFrame" name="frame_296">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>191</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <widget class="QScrollBar" name="horizontalScrollBar_102">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"> border: 1px solid red</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_297">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_102">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>5</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ border: 1px solid yellow ;
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Header2</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1095</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resorce.qrc"/>
+ </resources>
+ <connections/>
+</ui>
